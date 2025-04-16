@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3D9740"
+    android:paddingTop="80dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvSelectTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Task Type:"
+            android:textAlignment="center"
+            android:textColor="#EFE7E7"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radInstallDoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Install Door"
+                android:textAlignment="center"
+                android:textColor="#FBFAF8" />
+
+            <RadioButton
+                android:id="@+id/radBuildShelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Build Shelf"
+                android:textColor="#FBFAF8" />
+
+            <RadioButton
+                android:id="@+id/radAssembleFurniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assemble Furniture"
+                android:textColor="#FBFAF8" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvSelectMaterials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Select Materials:"
+            android:textColor="#EFE7E7"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbWood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wood (R500)"
+            android:textColor="#FBFAF8" />
+
+        <CheckBox
+            android:id="@+id/cbHardboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardboard (R200)"
+            android:textColor="#FBFAF8" />
+
+        <CheckBox
+            android:id="@+id/cbNails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nails (R20)"
+            android:textColor="#FBFAF8" />
+
+        <CheckBox
+            android:id="@+id/cbHinges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hinges (R30)"
+            android:textColor="#FBFAF8" />
+
+
+        <!-- Hours Input -->
+        <EditText
+            android:id="@+id/etHours"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:hint="Please enter number of hours"
+            android:inputType="number"
+            android:textColorHint="#E2DBDB" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#642727"
+            android:text="Calculate Estimate" />
+
+        <!-- Display Result -->
+        <TextView
+            android:id="@+id/tvEstimate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estimated Cost: R0"
+            android:textColor="#EFE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
